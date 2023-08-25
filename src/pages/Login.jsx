@@ -1,11 +1,11 @@
 import React from "react";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom";
-import { useState, useEffect, useCallback } from "react";
+import { useState, } from "react";
 import { connect } from "react-redux";
 import { saveAuthToken } from "../redux/Auth/auth-actions";
 import { ROUTES } from "../constants/routes.constants";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = ({ saveToken }) => {

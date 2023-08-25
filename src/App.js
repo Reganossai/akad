@@ -1,37 +1,28 @@
 import "./App.css";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import { useCallback, useEffect, useState } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { useCallback, useEffect } from "react";
 import { connect } from "react-redux";
 import { saveAuthToken } from "./redux/Auth/auth-actions";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthenticatedRoutes, GuestRoutes } from "./routes";
 import { HomePage } from "./pages";
-import { Loading } from "./components";
 import { ROUTES } from "./constants/routes.constants";
 
 function App({ saveToken }) {
-  const [appReady, setAppReady] = useState(false);
 
   const setUserTokenToReduxStateFromLocalStorage = useCallback(() => {
     const storedToken = localStorage.getItem("user-token");
     if (storedToken) {
       saveToken(storedToken);
     }
-  }, [saveToken]);
+  }, [saveToken,]);
 
-  const handleAppLoad = useCallback(() => {
-    setUserTokenToReduxStateFromLocalStorage();
-    setAppReady(true);
-  }, [saveToken]);
 
   useEffect(() => {
-    handleAppLoad();
-  }, [handleAppLoad]);
+    setUserTokenToReduxStateFromLocalStorage()
+  }, [setUserTokenToReduxStateFromLocalStorage]);
 
-  if (!appReady) {
-    return <Loading />;
-  }
 
   return (
     <div className="App">
