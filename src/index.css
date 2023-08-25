@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrong-pass{
+  margin: 15px 0px 0px 20px;
+  font-size: 15px;
+ font-weight: bold;
+ color: crimson;
+}
+
+.bg {
+  background-image: url("https://s3-alpha-sig.figma.com/img/6879/7f6c/84f4b00ffa845154f7ca23fa27a50779?Expires=1691971200&Signature=bY-RF~2yZ4aQfKOIp927M59CFgveMy5MbS0f55M58nvmre80k-uYYTh673TIZNoVCOYZy-XBRs3MT9-wEII6i1CHX~25xNN76DCiYVE-dpcPxbqyD40UYFMSrKucmHHS600JhpUILq2Jp-k2P2L38sAvHM5ex6dBXlK1yt77xo5CXMnZVRxvfeFRKYog50Jpy9-LNrfRRaA36IsXYb~eGf7R683lYsRloYkAnmTeRrdvoyA~pAI7CqvOYkP57kOyioshI~udSem51iBGJZ2wie4vmjs7RkVkVfo7zpEcX-QsAaPdfFxlMHsBSb--O37E32zxXC6dHj~4cRaydplBYQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4");
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: fill;
+
+}
+
+.bgg {
+  z-index: 1;
+  background-color: white;
+  width: 350px;
+  position: absolute;
+  top: 150px;
+  left: 510px;
+  padding: 35px 5px 50px 5px;
+  border-radius: 15px;
+}
+
+.aka{
+  margin: 0px 0px 20px 0px;
+}
+
+.lolade{
+  margin: 20px 0px 0px 50px;
+}
+
+#aka-1{
+  width: 110px;
+  margin: 0px 0px 0px 0px;
+ 
+}
+
+#aka-1 a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#aka-2 {
+  width: 100px;
+  margin: 0px 0px 0px 30px;
+}
+
+#aka-2 a{
+  color: white;
+  text-decoration: none;
+}
+
+
+.aka-3 a{
+  text-decoration: none;
+  margin: 30px 0px 10px 80px;
+  color: black;
+  font-family: monospace;
+}
+
+.aka-4 a{
+  text-decoration: none;
+  margin: 30px 0px 10px 80px;
+  color: black;
+  font-family: monospace;
+}
+
+.login-div {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  width: 100%;
+  height: 110vh;
+
+}
+
+.register-div {
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  width: 100%;
+  height: 110vh;
+
+}
+
+.akademia {
+  width: 200px;
+}
+
+.login-header {
+  display: flex;
+}
+
+.register-header {
+  display: flex;
+  margin: 0px 0px 30px 0px;
+}
+
+.login-header img {
+  width: 100px;
+  height: 30px;
+  margin: 5px 0px 0px 20px;
+}
+
+.register-header img {
+  width: 100px;
+  height: 30px;
+  margin: 5px 0px 0px 20px;
+}
+
+.login-header h2 {
+  font-size: 20px;
+  width: fit-content;
+  margin: 5px 30px 0px 140px;
+}
+
+.register-header h2 {
+  font-size: 20px;
+  width: fit-content;
+  margin: 5px 30px 0px 110px;
+}
+
+.inp-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px 0px 20px;
+}
+
+.inp-1 input::placeholder {
+  color: darkgray;
+}
+
+
+.inp-1 input::placeholder {
+  color: darkgray;
+}
+
+
+.inp-1 input {
+  width: 300px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 10px;
+  border-color: lightblue;
+  border-width: thin;
+}
+
+
+.inp-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 20px;
+}
+
+
+.inp-2 input {
+  width: 300px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 10px;
+  border-color: lightblue;
+  border-width: thin;
+}
+
+.inp-3 {
+  display: flex;
+  margin: 20px 0px 0px 18px;
+}
+
+.inp-3 input {}
+
+.inp-3 h5 {
+  font-size: 15px;
+  margin: 0px 0px 0px 65px;
+}
+
+.inp-3 a {
+  text-decoration: none;
+}
+
+.inp-3 h4 {
+  font-size: 15px;
+  margin: 0px 0px 0px 5px;
+}
+
+
+.inp-4 {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px 0px 20px;
+}
+
+.inp-4 input::placeholder {
+  color: darkgray;
+}
+
+
+.inp-4 input::placeholder {
+  color: darkgray;
+}
+
+
+.inp-4 input {
+  width: 300px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 10px;
+  border-color: lightblue;
+  border-width: thin;
+}
+
+
+#login-btn {
+  width: 130px;
+  margin: 40px 0px 0px 20px;
+}
+
+.login-to-reg {
+  margin: -35px 0px 0px 210px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.login-to-reg a {
+  color: black;
+}
+
+.reg-to-login {
+  margin: -35px 0px 0px 190px;
+}
+
+
+.reg-to-login a {
+  color: black;
+  font-size: 12px;
+
+}
+
+.reg-to-login .first-link {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-login-span {
+  text-decoration: dashed;
+  font-weight: 600;
+}
+
+
+
+/* DASHBOARD */
+.navbar {
+  z-index: 99;
+  height: 80px;
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logoo {
+  margin: 5px 0px 0px 10px;
+
+}
+
+#logout-bt-desktop{
+  display: block;
+}
+
+#navbarSupportedContent {
+  margin: 15px 0px 0px 450px;
+}
+
+#navbarSupportedContent ul {
+  display: flex;
+}
+
+#navbarSupportedContent li{
+  margin: 0px 10px 0px 10px;
+  list-style-type: none;
+}
+
+
+#navbarSupportedContentMobile{
+  display: none;
+}
+
+.reg {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+
+.powerfield {
+  padding: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 60px;
+  font-size: 20px;
+  font-weight: 700;
+  border-left: 3px solid orange;
+}
+
+.zaracho {
+  display: none;
+
+}
+
+.login-loading{
+  text-align: center;
+  margin-top: 20%;
+  height: 100%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.user-name {
+  font-weight: 600;
+  margin: 0px 10px 0px 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar-div {
+  width: 200px;
+  height: 150vh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+	box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-div ul{
+  margin: 130px 0px 0px 0px;
+
+}
+
+.sidebar-div li{
+  list-style-type: none;
+  margin: 40px 0px 40px 0px;
+  width: fit-content;
+  
+}
+
+.sidebar-div a{
+  text-decoration: none;
+  width: fit-content;
+  padding: 7px 20px 7px 20px ;
+  color: black;
+  font-weight: 500;
+}
+
+.fontawesome-sidebar{
+  margin: 0px 5px 0px 0px;
+}
+
+.ovrl {
+  position: absolute;
+  top: 80px;
+  left: 200px;
+  width: 1149px;
+  height:137vh;
+  background-color: #faf9f6;
+}
+
+.ovrl h1{
+  margin: 50px 0px 0px 20px;
+}
+
+.ovrl h6{
+  margin: 10px 0px 0px 20px;
+  color:#787878;
+}
+
+.ovrl p{
+  width: 820px;
+  font-size: 15px;
+  margin: 20px 0px 0px 20px;
+  padding: 100px 30px 100px 30px;
+  background-color: white;
+  border-radius: 20px;
+	box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+.admission-status{
+  background-color: #1877F2;
+  color: white;
+  width: 500px;
+  margin: 40px 0px 0px 20px;
+  padding: 20px 0px 20px 15px;
+  border-radius: 10px;
+}
+
+.admission-status h4{
+  font-size: 20px;
+ 
+}
+
+.hawai{
+  color: darkgray;
+}
+
+.admission-status a{
+  color: white;
+
+}
+
+.admission-status-flex{
+  display: flex;
+  width: fit-content;
+}
+
+.general-info{
+  background-color: white;
+  border: 1px solid #B0B0B0;
+  border-radius: 10px;
+  width: 350px;
+  height: 130px;
+  margin: 50px 0px 0px 40px;
+  padding: 50px 20px 0px 20px;
+  border-top: 10px solid #1877F2;;
+}
+
+.general-info h4{
+  font-size: 15px;
+}
+
+.sidebar-div a.active{
+  color: white;
+  background-color: #1877F2;
+  border-radius: 7px;
+ 
+}
+
+#menu-menu ul{
+  display: flex;
+  margin: 20px 0px 0px 10px;
+  padding: 2px 0px 3px 0px;
+  width: fit-content;
+
+  border-bottom: 1px solid #787878;
+}
+
+#menu-menu li{
+  list-style-type: none;
+  margin: 20px 100px 0px 20px;
+}
+
+#menu-menu a{
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+#menu-menu a.active{
+  border-bottom: 5px solid #1877F2;
+}
+
+.three-flex{
+  display: flex;
+  margin: 10px 0px 20px 0px;
+}
+
+#bt-next{
+  margin: 30px 0px 0px 30px;
+  width: 150px;
+}
+
+#bt-next a{
+  color: white;
+  text-decoration: none;
+}
+
+.reg-succ-p{
+  margin: 0px 10px 30px 20px;
+  font-weight: 600;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+  /* NAVBAR */
+
+  .navbar{
+    display: flex;
+    width: 100%;
+  }
+
+  #logout-bt-desktop{
+    display: none;
+  }
+
+  
+.lolade{
+  margin: 20px 0px 0px 25px;
+}
+
+  .logoo {
+    margin: 3px 0px 0px 30px;
+    width: 100px;
+  
+  }
+  
+  #navbarSupportedContent {
+    margin: 15px 0px 0px -180px;
+  }
+  
+  #navbarSupportedContent ul {
+    display: flex;
+  }
+
+  #navbarSupportedContentMobile{
+    display: block;
+  }
+
+  #navbarSupportedContentMobile ul{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color:#1877F2;
+    z-index: 90;
+    width: 80%;
+    height: 100vh;
+    padding: 50px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  #navbarSupportedContentMobile li{
+    margin: 20px 0px 20px 50px;
+    list-style-type: none;
+    width: fit-content;
+  } 
+
+  #navbarSupportedContentMobile a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+
+
+  }
+
+  .reg.hop{
+    width: 300px;
+    color: white;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .reg {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+  }
+  
+  .powerfield {
+    padding: 0px 0px 0px 5px;
+    margin: 0px 0px 0px -150px;
+    font-size: 10px;
+    font-weight: 700;
+    border-left: 3px solid orange;
+  }
+  
+  .zaracho {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 99;
+  
+  }
+  
+  .user-name {
+    display: none;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 0px 0px 0px 0px;
+  }
+ 
+  /* LOGIN AND REGISTER */
+  .bgg{
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    padding: 35px 5px 50px 5px;
+    border-radius: 15px;
+  
+  }
+
+  
+.inp-1 input {
+  width: 250px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 10px;
+  border-color: lightblue;
+  border-width: thin;
+}
+
+
+.inp-2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 20px;
+}
+
+
+.inp-2 input {
+  width: 250px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 10px;
+  border-color: lightblue;
+  border-width: thin;
+}
+
+.inp-4 input {
+  width: 250px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 0px 5px 10px;
+  border-color: lightblue;
+  border-width: thin;
+}
+
+
+.login-header h2 {
+  font-size: 20px;
+  width: fit-content;
+  margin: 5px 30px 0px 70px;
+}
+
+
+.register-header h2 {
+  font-size: 20px;
+  width: fit-content;
+  margin: 5px 30px 0px 60px;
+}
+
+
+.login-to-reg {
+  margin: 5px 0px 0px 25px;
+}
+
+
+.sidebar-div{
+  display: none;
+}
+
+
+.ovrl{
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  height: 180vh;
+}
+
+
+/* DASHBOARD */
+
+.admission-status{
+  width: 320px;
+}
+
+.general-info{
+  width: 320px;
+  margin: 30px 0px 0px 20px;
+}
+.admission-status-flex{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+
+/* ADMISSION */
+
+#menu-menu ul{
+  display: flex;
+  margin: 20px 0px 0px 0px;
+  padding: 2px 0px 3px 0px;
+  width: fit-content;
+  border-bottom: 1px solid #787878;
+}
+
+#menu-menu li{
+  width: fit-content;
+  list-style-type: none;
+  margin: 20px 10px 0px 10px;
+}
+
+#menu-menu a{
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.ovrl p{
+  width: 90%;
+  font-size: 15px;
+  margin: 20px 10px 0px 20px;
+  padding: 100px 30px 100px 30px;
+  background-color: white;
+  border-radius: 20px;
+	box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+  color: red;
+
+}
+
+
+.three-flex{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 40px;
+}
+
+.pass{
+  margin: 0px 0px 0px 40px;
+}
+
+
+#bt-next{
+  margin: 70px 0px 0px 50px;
+  width: 150px;
+}
+
+
+.login-loading{
+  margin-top: 50%;
+}
+
+.wrong-pass{
+  margin: 15px 0px 0px 15px;
+  font-size: 13px;
+ font-weight: bold;
+ color: crimson;
+}
+
+.user-exists{
+  font-weight: bold;
+  color: crimson;
+  width: 300px;
+  font-size: 13px;
+  margin: 20px 0px 0px 15px;
+}
+}
