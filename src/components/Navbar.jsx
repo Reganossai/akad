@@ -23,7 +23,7 @@ const Navbar = ({saveToken}) => {
   const handleLogout = useCallback(() => {
     saveToken("");
     history.push(ROUTES.LOGIN)
-  }, [saveToken]);
+  }, [saveToken,history]);
 
   nav
     ? (document.body.style.overflowX = "hidden")
